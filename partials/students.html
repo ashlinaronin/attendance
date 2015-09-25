@@ -1,14 +1,20 @@
-<h1>Sign In / Out</h1>
+<h1 class="sign-in">Sign In / Out.</h1>
     <ul>
-        <li ng-repeat="student in students">
+        <li ng-repeat="student in students | orderBy:'name'" class="student-list-item">
             {{ student.name }}
             <span ng-show="!student.signedIn && !student.signedOut">
-                <button type="button" class="btn btn-default" ng-click="signIn(student)">Sign in</button>
+                <button type="button" class="btn btn-default btn-sm btn-sign-in" ng-click="signIn(student)">
+                    <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                    Sign in
+                </button>
             </span>
             <span ng-show="student.signedIn && !student.signedOut">
-                <button type="button" class="btn btn-default" ng-click="signOut(student)">Sign out</button>
+                <button type="button" class="btn btn-default btn-sm btn-sign-out" ng-click="signOut(student)">
+                    Sign out
+                    <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                </button>
             </span>
-            <span ng-show="student.signedIn && student.signedOut">
+            <span ng-show="student.signedIn && student.signedOut" class="animated pulse thanks">
                 Thanks for coming today!
             </span>
         </li>

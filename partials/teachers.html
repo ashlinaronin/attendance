@@ -1,0 +1,26 @@
+<h1 class="whos-here">Who's here?</h1>
+
+<h3 class="signed-in">Signed in:</h3>
+<p ng-show="!haveSignedIn.length">No students.</p>
+<ul>
+    <li ng-repeat="student in haveSignedIn = (students | filter: {signedIn: true, signedOut: false})" class="student-list-item">
+        {{ student.name }}
+    </li>
+</ul>
+
+<h3 class="signed-out">Signed in and out:</h3>
+<p ng-show="!haveSignedOut.length">No students.</p>
+<ul>
+    <li ng-repeat="student in haveSignedOut = (students | filter: {signedIn: true, signedOut: true})" class="student-list-item">
+        {{ student.name }}
+    </li>
+</ul>
+
+
+<h3 class="not-here">Didn't bother today:</h3>
+<p ng-show="!notHere.length">No students.</p>
+<ul>
+    <li ng-repeat="student in notHere = (students | filter: {signedIn: false, signedOut: false})" class="student-list-item">
+        {{ student.name }}
+    </li>
+</ul>

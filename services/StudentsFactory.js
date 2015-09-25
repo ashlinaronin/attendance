@@ -40,7 +40,7 @@ attendance.factory('StudentsFactory', function StudentsFactory() {
         },
     ];
 
-    // No methods on students. That should be done in the students controller.
+    // No methods on students. Those will be in the students controller.
 
     return factory;
 });

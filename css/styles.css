@@ -1,3 +1,40 @@
 .container {
   padding-top: 70px;
 }
+
+.navbar {
+    border-width: 0px;
+    background-color: white;
+}
+
+ul.nav a {
+    color: black;
+}
+
+ul.nav li.active {
+    font-weight: bold;
+}
+
+li.student-list-item {
+    padding-bottom: 5px;
+}
+
+.welcome, h1.sign-in, h1.whos-here {
+    background-color: #71697A;
+    color: white;
+}
+
+.thanks, h3.signed-out {
+    background-color: #7EBC89;
+    color: white;
+}
+
+h3.signed-in {
+    background-color: #F79D5C;
+    color: white;
+}
+
+h3.not-here {
+    background-color: #FAEDCA;
+    color: white;
+}

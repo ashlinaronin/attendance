@@ -11,19 +11,17 @@
 		<script src="controllers/TeachersController.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/animate.css">
+
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<!-- <div class="container-fluid"> -->
-				<!-- <div class="navbar-header"> -->
-                    <ul class="nav nav-tabs">
-                        <!-- ui-sref-active assigns the given class when the specified sref is active -->
-                        <li role="presentation" ui-sref-active="active"><a ui-sref="welcome">Attendance</a></li>
-                        <li role="presentation" ui-sref-active="active"><a ui-sref="students">Students</a></li>
-                        <li role="presentation" ui-sref-active="active"><a ui-sref="teachers">Teachers</a></li>
-                    </ul>
-				<!-- </div> -->
-			<!-- </div> -->
+            <ul class="nav nav-tabs">
+                <!-- ui-sref-active assigns the given class when the specified sref is active -->
+                <li role="presentation" ui-sref-active="active"><a ui-sref="welcome">Attendance</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="students">Students</a></li>
+                <li role="presentation" ui-sref-active="active"><a ui-sref="teachers">Teachers</a></li>
+            </ul>
 		</nav>
 		<div class="container">
 			<div ui-view></div>
