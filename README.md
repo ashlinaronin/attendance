@@ -11,9 +11,13 @@ Setup
 ```console
 $ git clone https://github.com/ashlinaronin/attendance.git
 $ cd attendance
+```
+* Run a simple server so that Angular can make AJAX calls. Python is an easy option.
+```console
 $ python -m SimpleHTTPServer
 ```
-* Navigate to 'localhost:8000' in a browser of your choice
+
+* Navigate to 'localhost:8000' in a browser of your choice.
 * Enjoy!
 
 Technologies Used
