@@ -19,7 +19,7 @@ attendance.factory('StudentsFactory', function StudentsFactory() {
             signedOut: false
         },
         {
-            name: 'Trent David',
+            name: 'Trent Davidman',
             signedIn: false,
             signedOut: false
         },
@@ -34,11 +34,13 @@ attendance.factory('StudentsFactory', function StudentsFactory() {
             signedOut: false
         },
         {
-            name: 'Brentwood Dais',
+            name: 'Brentwood Dials',
             signedIn: false,
             signedOut: false
         },
     ];
 
     // No methods on students. That should be done in the students controller.
+
+    return factory;
 });

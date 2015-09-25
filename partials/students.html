@@ -1,0 +1,16 @@
+<h1>Sign In / Out</h1>
+    <ul>
+        <li ng-repeat="student in students">
+            {{ student.name }}
+            <span ng-show="!student.signedIn && !student.signedOut">
+                <button type="button" class="btn btn-default" ng-click="signIn(student)">Sign in</button>
+            </span>
+            <span ng-show="student.signedIn && !student.signedOut">
+                <button type="button" class="btn btn-default" ng-click="signOut(student)">Sign out</button>
+            </span>
+            <span ng-show="student.signedIn && student.signedOut">
+                Thanks for coming today!
+            </span>
+        </li>
+    </ul>
+</div>
